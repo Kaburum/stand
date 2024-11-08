@@ -1351,6 +1351,30 @@ pixie('event', 'LandingPage', {
 pixie('event', 'CustomEvent');
 </script>
 <noscript><img src="https://ib.adnxs.com/pixie?pi=897daec0-69a3-4608-947a-9f8bfadcd6e0&e=CustomEvent&script=0" width="1" height="1" style="display:none"/></noscript>
+    <script>
+        	window.uetq = window.uetq || [];
+	        window.uetq.push('event', 'purchase', { 
+		'transaction_id': 'REPLACE_WITH_TRANSACTION_ID',
+		'ecomm_prodid': ['REPLACE_WITH_PRODUCT_ID', 'REPLACE_WITH_PRODUCT_ID', …], 
+		'ecomm_pagetype': 'purchase',
+		'ecomm_totalvalue': REPLACE_WITH_TOTAL_PURCHASE_PRICE,
+		'revenue_value': REPLACE_WITH_VALUE_FOR_CONVERSION_REPORTING,
+		'currency': 'REPLACE_WITH_CURRENCY',
+		'items': [ 
+		    { 
+		      'id': 'REPLACE_WITH_PRODUCTID', 
+		      'quantity': REPLACE_WITH_QUANTITY, 
+		      'price': REPLACE_WITH_SELLING_PRICE 
+		    }, 
+		    { 
+		      'id': 'REPLACE_WITH_PRODUCTID', 
+		      'quantity': REPLACE_WITH_QUANTITY, 
+		      'price': REPLACE_WITH_SELLING_PRICE 
+		    } 
+		  ] 
+		}
+	);
+    </script>
 </body>
 
 </html>
