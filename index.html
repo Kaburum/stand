@@ -1318,7 +1318,26 @@
 
     <!-- CUSTOM JS  -->
     <script src="js/custom.js"></script>
+<script>
+    var interestGroup = {
+owner: "https://bat.bing.com",
+name: "NTPGroup",
+lifetimeMs: 2592000 * 1000,
+priority: 1000,
+biddingLogicUrl: "https://bat.bing.com/pa/ps/x/cdn/bidding/bidding-current.js",
+executionMode: "compatibility",
+trustedBiddingSignalsUrl: "https://ib.adnxs.com/ps/ib/pa/kv",
+trustedBiddingSignalsKeys: ['ms_u_m_' + 'test_muid', 'ms_u_a_' + 'test_anid']
+}
 
+navigator.joinAdInterestGroup(interestGroup, 2592000 * 1000);
+
+function getCookie(name) {
+ const value = `; ${document.cookie}`;
+ const parts = value.split(`; ${name}=`);
+ if (parts.length === 2) return parts.pop().split(';').shift();
+}
+</script>
 
 
 </body>
